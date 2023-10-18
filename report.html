@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px;
+            background-color: burlywood;
+            border: 1px solid orange;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .back-button:hover {
+            background-color: rgb(15, 240, 230);
+            color: black;
+        }
+      .flames {
+        display: flex;
+
+        justify-content: center;
+
+        gap: 2px;
+      }
+      .flames1 {
+        border: 10px solid rgb(15, 217, 129);
+        border-radius: 20px;
+        background-color: rgb(15, 180, 178);
+      }
+      .flames2 {
+        border: 10px solid rgb(203, 213, 14);
+        border-radius: 20px;
+        background-color: rgb(216, 130, 83);
+      }
+      .flames4 {
+        border: 10px solid rgb(187, 15, 217);
+        border-radius: 20px;
+        background-color: rgb(245, 181, 229);
+      }
+      .flames3 {
+        border: 10px solid burlywood;
+        border-radius: 20px;
+        background-color: bisque;
+      }
+      p {
+        margin: 10px;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .title {
+        font-size: large;
+        font-family: "Roboto Slab", serif;
+      }
+
+      h6 {
+        font-size: 13px;
+      }
+
+      table td {
+        padding: 5px 10px;
+      }
+
+      input[type="submit"] {
+        width: auto;
+        background: red;
+        color: #ffffff;
+      }
+
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #d21e1e;
+        border-radius: 4px;
+        resize: vertical;
+      }
+
+      label {
+        border: 3px solid bisque;
+        border-radius: 10px;
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
+
+      input[type="submit"] {
+        background-color: #58257b;
+        color: rgb(255, 255, 255);
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      .container {
+        border-radius: 5px;
+
+        padding: 0px;
+      }
+
+      .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+      }
+
+      .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      @media screen and (max-width: 600px) {
+        .col-25,
+        .col-75,
+        input[type="submit"] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
+      .data {
+        background-color: blanchedalmond;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .member-form {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a class="back-button" href="trangchu.html">Back</a>
+    <h1 style="text-align: center; color: burlywood">
+      Thành Viên của nhóm
+      <img
+        src="https://cdn-icons-png.flaticon.com/256/12386/12386004.png"
+        width="100px"
+        alt=""
+      />
+    </h1>
+    <div class="flames">
+      <div class="flames1">
+        <div class="container">
+          <img
+            src="picture/Thành viên (1).jpg"
+            width="150px"
+            alt=""
+          />
+        </div>
+        <div class="content1">
+          <p>Họ và Tên: Phan Thành Long</p>
+          <p>Mã Sinh Viên:20221837</p>
+          <p>Sở thích : Nghe nhạc, Du lịch</p>
+          <p></p>
+        </div>
+      </div>
+      <div class="flames2">
+        <div class="container">
+          <img
+            src="picture/Thành viên (2).jpg"
+            alt=""
+            width="210px"
+          />
+        </div>
+        <div class="content2">
+          <p>Họ và Tên: Đỗ Đức Tuyến</p>
+          <p>Mã Sinh Viên:20221712</p>
+          <p>Sở thích : Xem anime</p>
+        </div>
+      </div>
+
+      <div class="flames3">
+        <div class="container">
+          <img
+            src="picture/Thành viên (3).png"
+            alt=""
+            width="180px"
+          />
+        </div>
+        <div class="content1">
+          <p>Họ và Tên:Phan Tự Trường</p>
+          <p>Mã Sinh Viên: 20221889</p>
+          <p>Sở thích: Chơi thể thao, nghe nhạc</p>
+        </div>
+      </div>
+
+      <div class="flames4">
+        <div class="container">
+          <img
+            src="picture/Thành viên (4).png"
+            width="130px"
+            alt=""
+          />
+        </div>
+        <div class="content1">
+          <p>Họ và Tên:Thanh dũng</p>
+          <p>Mã Sinh Viên:20221729</p>
+          <p>Sở thích:nghe nhạc, đọc truyện</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="data">Đơn xin đăng kí làm thành viên</h2>
+    <div class="member-form">
+      <form name="memberForm" onsubmit="return validateForm()">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname"> Họ và tên </label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="fname"
+              name="firstName"
+              placeholder="Tên của bạn"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="country">Nộp cho </label>
+          </div>
+          <div class="col-75">
+            <select id="country" name="country" class="row">
+              <option value="bancansu">Phan Thành Long</option>
+              <option value="bancansu2">Phan Tư Trường</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Đóng góp ý kiến</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Viết gì đó..."
+              style="height: 150px"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Xác nhận" />
+        </div>
+      </form>
+    </div>
+
+    <script src="./project.js"></script>
+  </body>
+</html>
