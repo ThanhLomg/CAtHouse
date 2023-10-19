@@ -28,9 +28,7 @@
         }
       .flames {
         display: flex;
-
         justify-content: center;
-
         gap: 2px;
       }
       .flames1 {
@@ -152,6 +150,14 @@
       .member-form {
         margin-left: 20px;
       }
+      @media only screen and (max-width: 740px) {
+        .flames {
+          color: white;
+          display: flex;
+          flex-direction: column; 
+          text-align: center;
+        }
+      }
     </style>
   </head>
 
@@ -232,7 +238,7 @@
       <form name="memberForm" onsubmit="return validateForm()">
         <div class="row">
           <div class="col-25">
-            <label for="fname"> Họ và tên </label>
+            <label for="fname"> Họ và tên của bạn </label>
           </div>
           <div class="col-75">
             <input
@@ -246,7 +252,7 @@
 
         <div class="row">
           <div class="col-25">
-            <label for="country">Nộp cho </label>
+            <label for="country">Gửi đến </label>
           </div>
           <div class="col-75">
             <select id="country" name="country" class="row">
@@ -257,7 +263,7 @@
         </div>
         <div class="row">
           <div class="col-25">
-            <label for="subject">Đóng góp ý kiến</label>
+            <label for="subject">Mô tả thông tin (Ví dụ: bản thân, ý tưởng...)</label>
           </div>
           <div class="col-75">
             <textarea
