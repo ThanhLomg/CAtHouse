@@ -68,3 +68,27 @@ function validateForm() {
     return false;
   }
 }
+function validateForm() {
+  let firstName = document.forms["memberForm"]["firstName"].value;
+  console.log(firstName);
+  hash = window.location.hash.substr(1);
+  var reg = new RegExp("^[0-9]$");
+  if (firstName == "") {
+    console.log(firstName);
+    alert("Bạn phải điền họ và tên");
+    return false;
+  } else if (
+    // có bao gồm số không
+    /^[\+\-]?\d*\.?\d+(?:[Ee][\+\-]?\d+)?$/.test(firstName)
+  ) {
+    alert("bạn phải điền chữ ");
+    return false;
+  }
+  let subject = document.forms["memberForm"]["subject"].value;
+  console.log(subject);
+  if (subject == "") {
+    console.log(subject);
+    alert("Bạn phải điền mô tả bản thân ");
+    return false;
+  }
+}
